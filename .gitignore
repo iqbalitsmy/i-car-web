@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+
+# Tailwind build output
+/public/css/
+/public/js/
+
+# VSCode settings
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Log files
+*.log
+
+# Environment files
+.env
+
+# NPM package lock
+package-lock.json
+
+# Tailwind CSS output
+*.css
+
+# Temporary build files
+/build/
+/dist/
+
+# Operating system files
+Thumbs.db
