@@ -16,7 +16,8 @@
 </head>
 
 <body>
-    <header class="">
+    <header class="" style="display: unset;">
+        <!-- top header -->
         <div class="container mx-auto flex gap-2 justify-between items-center p-4">
             <!-- Logo Section -->
             <div class=" md:w-2/5 text-xl sm:text-2xl md:text-3xl font-bold text-black">
@@ -34,10 +35,11 @@
                 </div>
 
                 <!-- Advanced Search Button -->
-                <button
+                <a
+                    href="#advance-search"
                     class="hidden md:block hover:text-gray-200 cursor-pointer border px-4 py-1 rounded-md bg-secondary text-white text-nowrap">
                     Advance Search
-                </button>
+                </a>
             </div>
         </div>
 
@@ -364,7 +366,7 @@
 
             <!-- Previous Button -->
             <button id="prevBtn"
-                class="prevBtn cursor-pointer absolute top-1/2 left-2 sm:left-4 transform -translate-y-1/2 text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 touch-manipulation">
+                class="prevBtn cursor-pointer absolute top-1/2 left-2 sm:left-4 md:left-10 lg:left-20 2xl:left-48 transform -translate-y-1/2 text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 touch-manipulation">
                 <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
@@ -372,7 +374,7 @@
 
             <!-- Next Button -->
             <button id="nextBtn"
-                class=" nextBtn cursor-pointer absolute top-1/2 right-2 sm:right-4 transform -translate-y-1/2 text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 touch-manipulation">
+                class=" nextBtn cursor-pointer absolute top-1/2 right-2 sm:right-4 md:right-10 lg:right-20 2xl:right-48 transform -translate-y-1/2 text-gray-800 p-2 sm:p-3 rounded-full shadow-lg transition-all duration-200 hover:scale-110 touch-manipulation">
                 <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                 </svg>
@@ -1584,7 +1586,7 @@
                 <!-- aside -->
                 <aside class="mx-auto flex flex-col sm:flex-row xl:flex-col gap-6 ">
                     <!-- search by category -->
-                    <div class="bg-gray-800 text-white p-4 lg:p-3 2xl:p-4 rounded-lg w-[20rem] xl:w-sm ">
+                    <div id="advance-search" class="bg-gray-800 text-white p-4 lg:p-3 2xl:p-4 rounded-lg w-sm xl:w-xs ">
                         <!-- Header -->
                         <h2 class="text-xl font-semibold mb-4">Find the best car</h2>
 
