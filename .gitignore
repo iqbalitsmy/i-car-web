@@ -21,7 +21,7 @@ node_modules/
 package-lock.json
 
 # Tailwind CSS output
-*.css
+# *.css
 
 # Temporary build files
 /build/

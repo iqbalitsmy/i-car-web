@@ -1,0 +1,15 @@
+.prevBtn,
+.nextBtn,
+.indicator {
+    background-color: rgba(255, 255, 255, 0.30);
+}
+
+.prevBtn:hover,
+.nextBtn:hover,
+.active-indicator {
+    background-color: rgba(255, 255, 255, 0.60);
+}
+
+.indicator:hover, .active-indicator:hover {
+    background-color: rgba(255, 255, 255, 1);
+}   
