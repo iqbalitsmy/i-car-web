@@ -448,6 +448,34 @@
 
     </main>
 
+    <!-- WhatsApp and Go to Top Button -->
+    <div class="fixed bottom-6 right-4 flex flex-col gap-3 z-50 md:right-6">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/1234567890?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20vehicles"
+            target="_blank"
+            class="w-12 h-12 md:w-14 md:h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center group relative">
+            <i class="fab fa-whatsapp text-xl md:text-2xl"></i>
+
+            <!-- Mobile tooltip -->
+            <div
+                class="absolute right-14 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap md:text-sm md:px-3 md:py-2">
+                Chat with us
+                <div
+                    class="absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 border-2 border-transparent border-l-gray-800 md:border-4">
+                </div>
+            </div>
+
+            <!-- Simple pulse -->
+            <div class="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-30"></div>
+        </a>
+
+        <!-- Go to Top Button -->
+        <button id="goToTopResponsive"
+            class="w-12 h-12 md:w-12 md:h-12 bg-primary hover:bg-red-700 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 opacity-0 invisible">
+            <i class="fas fa-chevron-up text-sm md:text-lg"></i>
+        </button>
+    </div>
+
     <footer class="bg-gray-900 text-gray-300">
         <!-- Main Footer Content -->
         <div class="container mx-auto px-4 py-8 lg:py-20 lg:pt-28">
