@@ -31,12 +31,12 @@
                     <input type="text" placeholder="Search here ..."
                         class="px-2 md:px-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-l-md w-full grow">
                     <button
-                        class="bg-primary text-white px-2 md:px-4 py-1 rounded-r-md hover:bg-red-600 cursor-pointer">
+                        class="bg-primary text-white px-2 md:px-4 py-1 rounded-r-md hover:bg-primary-darker cursor-pointer">
                         Search
                     </button>
                 </div>
 
-                <!-- Advanced Search Button -->
+                <!-- login Button -->
                 <a href="/src/pages/login"
                     class="hidden md:block hover:text-gray-200 cursor-pointer border px-4 py-1 rounded-md bg-secondary text-white text-nowrap">
                     Login
@@ -51,66 +51,70 @@
                 <div class="hidden md:flex items-center justify-center h-12">
                     <ul class="flex space-x-8 font-bold text-sm h-full items-center">
                         <li class="h-full flex items-center">
-                            <a href="/src/pages/home" class="hover:text-red-200 transition-colors">Home</a>
+                            <a href="/src/pages/home" class="hover:text-gray-200 transition-colors">Home</a>
                         </li>
 
                         <!-- Car Search Dropdown -->
                         <li class="relative group h-full flex items-center">
-                            <button class="hover:text-red-200 transition-colors flex items-center">
+                            <button class="hover:text-gray-200 transition-colors flex items-center">
                                 Car Search <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
                                 class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
                                 <a href="/src/pages/cars#search-by-brands"
-                                    class="block px-4 py-2 hover:bg-red-700">Search by Brands</a>
+                                    class="block px-4 py-2 hover:bg-primary-darker">Search by Brands</a>
                                 <a href="/src/pages/cars#search-by-price"
-                                    class="block px-4 py-2 hover:bg-red-700">Search by Price</a>
+                                    class="block px-4 py-2 hover:bg-primary-darker">Search by Price</a>
                                 <a href="/src/pages/cars#search-by-discount"
-                                    class="block px-4 py-2 hover:bg-red-700">Search by Discount</a>
-                                <a href="/src/pages/cars#search-by-type" class="block px-4 py-2 hover:bg-red-700">Search
+                                    class="block px-4 py-2 hover:bg-primary-darker">Search by Discount</a>
+                                <a href="/src/pages/cars#search-by-type"
+                                    class="block px-4 py-2 hover:bg-primary-darker">Search
                                     by Type</a>
                                 <a href="/src/pages/cars#search-by-category"
-                                    class="block px-4 py-2 hover:bg-red-700">Search by Category</a>
+                                    class="block px-4 py-2 hover:bg-primary-darker">Search by Category</a>
                             </div>
                         </li>
 
                         <!-- How to Order Dropdown -->
                         <li class="relative group h-full flex items-center">
-                            <button class="hover:text-red-200 transition-colors flex items-center">
+                            <button class="hover:text-gray-200 transition-colors flex items-center">
                                 How to Order <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
                                 class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
                                 <a href="/src/pages/how-to-order-from-auction"
-                                    class="block px-4 py-2 hover:bg-red-700">Auction Order Process</a>
-                                <a href="/src/pages/how-to-buy-from-stock" class="block px-4 py-2 hover:bg-red-700">How
+                                    class="block px-4 py-2 hover:bg-primary-darker">Auction Order Process</a>
+                                <a href="/src/pages/how-to-buy-from-stock"
+                                    class="block px-4 py-2 hover:bg-primary-darker">How
                                     To Buy From Stock</a>
                             </div>
                         </li>
 
                         <!-- Services Dropdown -->
                         <li class="relative group h-full flex items-center">
-                            <button class="hover:text-red-200 transition-colors flex items-center">
+                            <button class="hover:text-gray-200 transition-colors flex items-center">
                                 Services <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
                                 class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="/src/pages/services" class="block px-4 py-2 hover:bg-red-700">Shipping</a>
-                                <a href="/src/pages/why-choose-us" class="block px-4 py-2 hover:bg-red-700">Why Choose
+                                <a href="/src/pages/services"
+                                    class="block px-4 py-2 hover:bg-primary-darker">Shipping</a>
+                                <a href="/src/pages/why-choose-us" class="block px-4 py-2 hover:bg-primary-darker">Why
+                                    Choose
                                     Us</a>
                             </div>
                         </li>
 
                         <li>
-                            <a href="/src/pages/about-us" class="hover:text-red-200 transition-colors">About Us</a>
+                            <a href="/src/pages/about-us" class="hover:text-gray-200 transition-colors">About Us</a>
                         </li>
 
                         <li>
-                            <a href="/src/pages/contact-us" class="hover:text-red-200 transition-colors">Contact Us</a>
+                            <a href="/src/pages/contact-us" class="hover:text-gray-200 transition-colors">Contact Us</a>
                         </li>
 
                         <li>
-                            <a href="/src/pages/faq" class="hover:text-red-200 transition-colors">FAQ</a>
+                            <a href="/src/pages/faq" class="hover:text-gray-200 transition-colors">FAQ</a>
                         </li>
                     </ul>
                 </div>
@@ -130,41 +134,43 @@
                     <!-- Mobile Menu -->
                     <div id="mobileMenu" class="overflow-hidden max-h-0 transition-all duration-300 ease-out">
                         <div class="py-2 space-y-1">
-                            <a href="/src/pages/home" class="block px-4 py-2 hover:bg-red-600">Home</a>
+                            <a href="/src/pages/home" class="block px-4 py-2 hover:bg-primary">Home</a>
 
                             <!-- Mobile Car Search -->
                             <div class="mobile-dropdown">
                                 <button
-                                    class="w-full text-left px-4 py-2 hover:bg-red-600 flex items-center justify-between"
+                                    class="w-full text-left px-4 py-2 hover:bg-primary flex items-center justify-between"
                                     onclick="toggleMobileDropdown(this)">
                                     Car Search <span class="text-xs">▼</span>
                                 </button>
-                                <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
+                                <div
+                                    class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-primary-darker">
                                     <a href="/src/pages/cars#search-by-brands"
-                                        class="block px-8 py-2 hover:bg-red-700">Search by Brands</a>
+                                        class="block px-8 py-2 hover:bg-primary-darker">Search by Brands</a>
                                     <a href="/src/pages/cars#search-by-price"
-                                        class="block px-8 py-2 hover:bg-red-700">Search by Price</a>
+                                        class="block px-8 py-2 hover:bg-primary-darker">Search by Price</a>
                                     <a href="/src/pages/cars#search-by-discount"
-                                        class="block px-8 py-2 hover:bg-red-700">Search by Discount</a>
+                                        class="block px-8 py-2 hover:bg-primary-darker">Search by Discount</a>
                                     <a href="/src/pages/cars#search-by-type"
-                                        class="block px-8 py-2 hover:bg-red-700">Search by Type</a>
+                                        class="block px-8 py-2 hover:bg-primary-darker">Search by Type</a>
                                     <a href="/src/pages/cars#search-by-category"
-                                        class="block px-8 py-2 hover:bg-red-700">Search by Category</a>
+                                        class="block px-8 py-2 hover:bg-primary-darker">Search by Category</a>
                                 </div>
                             </div>
 
                             <!-- Mobile How to Order -->
                             <div class="mobile-dropdown">
                                 <button
-                                    class="w-full text-left px-4 py-2 hover:bg-red-600 flex items-center justify-between"
+                                    class="w-full text-left px-4 py-2 hover:bg-primary flex items-center justify-between"
                                     onclick="toggleMobileDropdown(this)">
                                     How to Order <span class="text-xs">▼</span>
                                 </button>
-                                <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
+                                <div
+                                    class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-primary-darker">
                                     <a href="/src/pages/how-to-order-from-auction"
-                                        class="block px-8 py-2 hover:bg-red-700">Auction Order Process</a>
+                                        class="block px-8 py-2 hover:bg-primary-darker">Auction Order Process</a>
                                     <a href="/src/pages/how-to-buy-from-stock"
-                                        class="block px-8 py-2 hover:bg-red-700">How
+                                        class="block px-8 py-2 hover:bg-primary-darker">How
                                         To Buy From Stock</a>
                                 </div>
                             </div>
@@ -172,23 +178,26 @@
                             <!-- Mobile Services -->
                             <div class="mobile-dropdown">
                                 <button
-                                    class="w-full text-left px-4 py-2 hover:bg-red-600 flex items-center justify-between"
+                                    class="w-full text-left px-4 py-2 hover:bg-primary flex items-center justify-between"
                                     onclick="toggleMobileDropdown(this)">
                                     Services <span class="text-xs">▼</span>
                                 </button>
-                                <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="/src/pages/services" class="block px-8 py-2 hover:bg-red-700">Shipping</a>
-                                    <a href="/src/pages/why-choose-us" class="block px-8 py-2 hover:bg-red-700">Why
+                                <div
+                                    class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-primary-darker">
+                                    <a href="/src/pages/services"
+                                        class="block px-8 py-2 hover:bg-primary-darker">Shipping</a>
+                                    <a href="/src/pages/why-choose-us"
+                                        class="block px-8 py-2 hover:bg-primary-darker">Why
                                         Choose Us</a>
                                 </div>
                             </div>
 
                             <!-- Mobile About Us -->
-                            <a href="/src/pages/about-us" class="block px-4 py-2 hover:bg-red-600">About Us</a>
+                            <a href="/src/pages/about-us" class="block px-4 py-2 hover:bg-primary">About Us</a>
                             <!-- Mobile Contact Us -->
-                            <a href="/src/pages/contact-us" class="block px-4 py-2 hover:bg-red-600">Contact Us</a>
+                            <a href="/src/pages/contact-us" class="block px-4 py-2 hover:bg-primary">Contact Us</a>
                             <!-- Mobile FAQ -->
-                            <a href="/src/pages/faq" class="block px-4 py-2 hover:bg-red-600">FAQ</a>
+                            <a href="/src/pages/faq" class="block px-4 py-2 hover:bg-primary">FAQ</a>
                         </div>
                     </div>
                 </div>
@@ -244,13 +253,13 @@
                         </li>
 
                         <li
-                            class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer bg-red-50">
+                            class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer bg-green-50">
                             <div class="flex items-center">
                                 <img src="../../assets/car-logo/honda.png" alt="Suzuki"
                                     class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
-                                <span class="text-sm text-red-600 font-medium">SUZUKI</span>
+                                <span class="text-sm text-primary-darker font-medium">SUZUKI</span>
                             </div>
-                            <span class="text-sm text-gray-500">(247)</span>
+                            <span class="text-sm text-primary-darker">(247)</span>
                         </li>
 
                         <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
@@ -950,7 +959,7 @@
 
                                     <!-- Search Button -->
                                     <button type="submit"
-                                        class="w-full cursor-pointer bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded transition-colors duration-200 mt-6">
+                                        class="w-full cursor-pointer bg-green-600 hover:bg-primary-light text-white font-bold py-3 px-4 rounded transition-colors duration-200 mt-6">
                                         <i class="fas fa-search mr-2"></i>
                                         Search
                                     </button>
@@ -1218,7 +1227,7 @@
 
                                 <!-- Search Button -->
                                 <button type="submit"
-                                    class="w-full cursor-pointer bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded transition-colors duration-200 mt-6">
+                                    class="w-full cursor-pointer bg-green-600 hover:bg-primary-light text-white font-bold py-3 px-4 rounded transition-colors duration-200 mt-6">
                                     <i class="fas fa-search mr-2"></i>
                                     Search
                                 </button>
@@ -1393,7 +1402,7 @@
 
             <!-- Go to Top Button -->
             <button id="goToTopResponsive"
-                class="w-12 h-12 md:w-12 md:h-12 bg-primary hover:bg-red-700 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 opacity-0 invisible">
+                class="w-12 h-12 md:w-12 md:h-12 bg-primary hover:bg-primary-light text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 opacity-0 invisible">
                 <i class="fas fa-chevron-up text-sm md:text-lg"></i>
             </button>
         </div>

@@ -80,14 +80,14 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', function () {
             const targetTab = this.getAttribute('data-tab');
 
-            // Remove active class from all buttons
+            // Remove active class from all buttons border-primary-darker text-primary-darker
             tabButtons.forEach(btn => {
-                btn.classList.remove('border-red-500', 'text-red-600');
+                btn.classList.remove('border-primary-darker', 'text-primary-darker');
                 btn.classList.add('border-transparent', 'text-gray-500', "hover:text-gray-700", "hover:border-gray-300");
             });
 
             // Add active class to clicked button
-            this.classList.add('border-red-500', 'text-red-600');
+            this.classList.add('border-primary-darker', 'text-primary-darker');
             this.classList.remove('border-transparent', 'text-gray-500', "hover:text-gray-700", "hover:border-gray-300");
 
             // Hide all tab contents
