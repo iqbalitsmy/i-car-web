@@ -21,7 +21,9 @@
         <div class="container mx-auto flex gap-2 justify-between items-center p-4">
             <!-- Logo Section -->
             <div class=" md:w-2/5 text-xl sm:text-2xl md:text-3xl font-bold text-black">
-                ReviveRides
+                <a href="/src/pages/home">
+                    KM Autos
+                </a>
             </div>
             <div class="hidden sm:flex items-center md:w-3/5 gap-2">
                 <!-- Search Bar -->
@@ -35,9 +37,9 @@
                 </div>
 
                 <!-- Advanced Search Button -->
-                <a href="#advance-search"
+                <a href="/src/pages/login"
                     class="hidden md:block hover:text-gray-200 cursor-pointer border px-4 py-1 rounded-md bg-secondary text-white text-nowrap">
-                    Advance Search
+                    Login
                 </a>
             </div>
         </div>
@@ -46,70 +48,69 @@
         <nav class="bg-primary text-white sticky top-0 z-50 shadow-lg">
             <div class="max-w-7xl mx-auto px-4">
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center justify-center py-3">
-                    <ul class="flex space-x-8 font-bold text-sm">
-                        <li>
-                            <a href="#" class="hover:text-red-200 transition-colors">Home</a>
+                <div class="hidden md:flex items-center justify-center h-12">
+                    <ul class="flex space-x-8 font-bold text-sm h-full items-center">
+                        <li class="h-full flex items-center">
+                            <a href="/src/pages/home" class="hover:text-red-200 transition-colors">Home</a>
                         </li>
 
                         <!-- Car Search Dropdown -->
-                        <li class="relative group">
+                        <li class="relative group h-full flex items-center">
                             <button class="hover:text-red-200 transition-colors flex items-center">
                                 Car Search <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Search by Make</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Search by Model</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Advanced Search</a>
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/cars#search-by-brands"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Brands</a>
+                                <a href="/src/pages/cars#search-by-price"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Price</a>
+                                <a href="/src/pages/cars#search-by-discount"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Discount</a>
+                                <a href="/src/pages/cars#search-by-type" class="block px-4 py-2 hover:bg-red-700">Search
+                                    by Type</a>
+                                <a href="/src/pages/cars#search-by-category"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Category</a>
                             </div>
                         </li>
 
                         <!-- How to Order Dropdown -->
-                        <li class="relative group">
+                        <li class="relative group h-full flex items-center">
                             <button class="hover:text-red-200 transition-colors flex items-center">
                                 How to Order <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Step by Step</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Payment Methods</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Shipping Info</a>
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/how-to-order-from-auction"
+                                    class="block px-4 py-2 hover:bg-red-700">Auction Order Process</a>
+                                <a href="/src/pages/how-to-buy-from-stock" class="block px-4 py-2 hover:bg-red-700">How
+                                    To Buy From Stock</a>
                             </div>
                         </li>
 
                         <!-- Services Dropdown -->
-                        <li class="relative group">
+                        <li class="relative group h-full flex items-center">
                             <button class="hover:text-red-200 transition-colors flex items-center">
                                 Services <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Inspection</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Shipping</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Documentation</a>
-                            </div>
-                        </li>
-
-                        <!-- About Us Dropdown -->
-                        <li class="relative group">
-                            <button class="hover:text-red-200 transition-colors flex items-center">
-                                About Us <span class="ml-1 text-xs">▼</span>
-                            </button>
-                            <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Our Story</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Team</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Contact</a>
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/services" class="block px-4 py-2 hover:bg-red-700">Shipping</a>
+                                <a href="/src/pages/why-choose-us" class="block px-4 py-2 hover:bg-red-700">Why Choose
+                                    Us</a>
                             </div>
                         </li>
 
                         <li>
-                            <a href="#" class="hover:text-red-200 transition-colors">Auction</a>
+                            <a href="/src/pages/about-us" class="hover:text-red-200 transition-colors">About Us</a>
                         </li>
 
                         <li>
-                            <a href="#" class="hover:text-red-200 transition-colors">Reviews</a>
+                            <a href="/src/pages/contact-us" class="hover:text-red-200 transition-colors">Contact Us</a>
+                        </li>
+
+                        <li>
+                            <a href="/src/pages/faq" class="hover:text-red-200 transition-colors">FAQ</a>
                         </li>
                     </ul>
                 </div>
@@ -129,7 +130,7 @@
                     <!-- Mobile Menu -->
                     <div id="mobileMenu" class="overflow-hidden max-h-0 transition-all duration-300 ease-out">
                         <div class="py-2 space-y-1">
-                            <a href="#" class="block px-4 py-2 hover:bg-red-600">Home</a>
+                            <a href="/src/pages/home" class="block px-4 py-2 hover:bg-red-600">Home</a>
 
                             <!-- Mobile Car Search -->
                             <div class="mobile-dropdown">
@@ -139,9 +140,16 @@
                                     Car Search <span class="text-xs">▼</span>
                                 </button>
                                 <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Search by Make</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Search by Model</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Advanced Search</a>
+                                    <a href="/src/pages/cars#search-by-brands"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Brands</a>
+                                    <a href="/src/pages/cars#search-by-price"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Price</a>
+                                    <a href="/src/pages/cars#search-by-discount"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Discount</a>
+                                    <a href="/src/pages/cars#search-by-type"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Type</a>
+                                    <a href="/src/pages/cars#search-by-category"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Category</a>
                                 </div>
                             </div>
 
@@ -153,9 +161,11 @@
                                     How to Order <span class="text-xs">▼</span>
                                 </button>
                                 <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Step by Step</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Payment Methods</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Shipping Info</a>
+                                    <a href="/src/pages/how-to-order-from-auction"
+                                        class="block px-8 py-2 hover:bg-red-700">Auction Order Process</a>
+                                    <a href="/src/pages/how-to-buy-from-stock"
+                                        class="block px-8 py-2 hover:bg-red-700">How
+                                        To Buy From Stock</a>
                                 </div>
                             </div>
 
@@ -167,28 +177,18 @@
                                     Services <span class="text-xs">▼</span>
                                 </button>
                                 <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Inspection</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Shipping</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Documentation</a>
+                                    <a href="/src/pages/services" class="block px-8 py-2 hover:bg-red-700">Shipping</a>
+                                    <a href="/src/pages/why-choose-us" class="block px-8 py-2 hover:bg-red-700">Why
+                                        Choose Us</a>
                                 </div>
                             </div>
 
                             <!-- Mobile About Us -->
-                            <div class="mobile-dropdown">
-                                <button
-                                    class="w-full text-left px-4 py-2 hover:bg-red-600 flex items-center justify-between"
-                                    onclick="toggleMobileDropdown(this)">
-                                    About Us <span class="text-xs">▼</span>
-                                </button>
-                                <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Our Story</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Team</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Contact</a>
-                                </div>
-                            </div>
-
-                            <a href="#" class="block px-4 py-2 hover:bg-red-600">Auction</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-red-600">Reviews</a>
+                            <a href="/src/pages/about-us" class="block px-4 py-2 hover:bg-red-600">About Us</a>
+                            <!-- Mobile Contact Us -->
+                            <a href="/src/pages/contact-us" class="block px-4 py-2 hover:bg-red-600">Contact Us</a>
+                            <!-- Mobile FAQ -->
+                            <a href="/src/pages/faq" class="block px-4 py-2 hover:bg-red-600">FAQ</a>
                         </div>
                     </div>
                 </div>
@@ -199,9 +199,9 @@
     <main class="min-h-screen">
         <!-- page header -->
         <div class="container mx-auto py-8 text-center">
-            <h1 class="text-xl md:text-3xl 2xl:text-4xl font-bold text-primary mb-2">Follow Some Simple Step</h1>
+            <h1 class="text-xl md:text-3xl 2xl:text-4xl font-bold text-primary mb-2">How To Order From Auction</h1>
             <!-- Breadcrumb Navigation -->
-            <nav class="mx-auto flex justify-center items-center py-2" aria-label="Breadcrumb">
+            <nav class="mx-auto flex justify-center items-center py-2 mb-4" aria-label="Breadcrumb">
                 <ol class="flex flex-wrap items-center space-x-1 text-sm">
                     <!-- Home -->
                     <li class="flex items-center">
@@ -219,228 +219,259 @@
                     <!-- Current Page -->
                     <li class="flex items-center">
                         <span class="px-2 py-1 text-gray-800 font-medium bg-gray-100 rounded" aria-current="page">
-                            <span class="inline">About-us</span>
+                            <span class="inline">How To Order From Auction</span>
                         </span>
                     </li>
                 </ol>
             </nav>
-            <p class="text-lg font-semibold text-gray-600">To Get Your Dream Cars From Japanese Auction to Anywhere</p>
+            <p class="text-gray-600 max-w-4xl text-center mx-auto">The system of our order and shipment is planned to
+                ensure the
+                security and the easiest way to
+                our valuable customers. How does the system work? Well, it starts with the payment of the
+                initial deposit by which you will get access and rights of portal and bidding. Also, it includes
+                the payment of the invoice amount and delivery of your selected vehicle at your required port.
+                Don't worry; we will continue to aware you about the shipment.</p>
         </div>
         <!-- Main Content -->
         <article>
-            <!-- How to Buy Section -->
-            <section class="max-w-4xl mx-auto py-12 mb-12 px-4">
-                <div class="space-y-12">
+            <!-- How To Order From Auction Section -->
+            <section class="max-w-6xl mx-auto px-4 pt-6 pb-12">
 
-                    <!-- Step 1: Signup -->
-                    <div class="flex flex-col justify-center lg:flex-row items-start lg:items-center gap-6">
-                        <div class="flex items-center gap-4 min-w-fit mx-auto lg:mx-0">
-                            <div
-                                class="w-12 xl:w-16 h-12 xl:h-16 rounded-full border-4 border-emerald-500 flex items-center justify-center">
-                                <i class="fas fa-user-plus text-lg xl:text-xl text-primary"></i>
-                            </div>
-                            <div class="bg-white border-4 border-emerald-500 rounded-full px-2 xl:px-4 py-2 xl:py-3">
-                                <h3 class="text-lg xl:text-xl font-bold text-primary">Signup</h3>
-                            </div>
+                <!-- Process Steps -->
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4 mb-16">
+                    <!-- Step 1: Sign Up -->
+                    <div
+                        class="bg-white border-2 border-primary rounded-lg p-2 lg:p-4 2xl:p-6 text-center transition-colors duration-200 group">
+                        <div
+                            class="w-12 h-12 mx-auto mb-2 2xl:mb-3 bg-red-50 rounded-full flex items-center justify-center transition-colors duration-200">
+                            <i class="fas fa-user-plus text-red-500 text-lg 2xl:text-xl"></i>
                         </div>
-                        <div class="flex-1">
-                            <p class="text-gray-700 leading-relaxed">
-                                To start the procedure, you need to sign up on our website. There is an easy signup
-                                option by which you can do it at a glance. We do not take any charge for signing up on
-                                our website. You just need to share your required information and confirm the account
-                                from your email.
-                            </p>
-                        </div>
+                        <h3 class="font-semibold text-gray-900">Sign Up</h3>
                     </div>
 
-                    <!-- Step 2: Bidding -->
-                    <div class="flex flex-col lg:flex-row-reverse items-start lg:items-center gap-6">
-                        <div class="flex items-center gap-4 min-w-fit lg:flex-row-reverse mx-auto lg:mx-0">
-                            <div
-                                class="w-12 xl:w-16 h-12 xl:h-16 rounded-full border-4 border-emerald-500 flex items-center justify-center">
-                                <i class="fas fa-gavel text-lg xl:text-xl text-primary"></i>
-                            </div>
-                            <div class="bg-white border-4 border-emerald-500 rounded-full px-2 xl:px-4 py-2 xl:py-3">
-                                <h3 class="text-lg xl:text-xl font-bold text-primary">Bidding</h3>
-                            </div>
+                    <!-- Step 2: Deposit -->
+                    <div
+                        class="bg-white border-2 border-primary rounded-lg p-2 lg:p-4 2xl:p-6 text-center transition-colors duration-200 group">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 bg-red-50 rounded-full flex items-center justify-center transition-colors duration-200">
+                            <i class="fas fa-university text-red-500 text-xl"></i>
                         </div>
-                        <div class="flex-1">
-                            <p class="text-gray-700 leading-relaxed lg:text-right">
-                                You are open to select any vehicle from our list and also can set your bidding range.
-                                After that, we will bid on your selected vehicle from the auction and win it for you.
-                                The good news is, you do not need to pay any amount if the bid, unfortunately, gets
-                                unsuccessful.
-                            </p>
-                        </div>
+                        <h3 class="font-semibold text-gray-900">Deposit</h3>
                     </div>
 
-                    <!-- Step 3: Auction Result -->
-                    <div class="flex flex-col lg:flex-row items-start lg:items-center gap-6">
-                        <div class="flex items-center gap-4 min-w-fit mx-auto lg:mx-0">
-                            <div
-                                class="w-12 xl:w-16 h-12 xl:h-16 rounded-full border-4 border-emerald-500 flex items-center justify-center">
-                                <i class="fas fa-chart-bar text-lg xl:text-xl text-primary"></i>
-                            </div>
-                            <div class="bg-white border-4 border-emerald-500 rounded-full  px-2 xl:px-4 py-2 xl:py-3">
-                                <h3 class="text-lg xl:text-xl font-bold text-primary">Auction Result</h3>
-                            </div>
+                    <!-- Step 3: Bidding -->
+                    <div
+                        class="bg-white border-2 border-primary rounded-lg p-2 lg:p-4 2xl:p-6 text-center transition-colors duration-200 group">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 bg-red-50 rounded-full flex items-center justify-center transition-colors duration-200">
+                            <i class="fas fa-gavel text-red-500 text-xl"></i>
                         </div>
-                        <div class="flex-1">
-                            <p class="text-gray-700 leading-relaxed">
-                                From our member area, you will be notified of the result of the auction. Moreover, we
-                                will inform you of the result by email. When the bid will be successful, we will provide
-                                you the invoice containing the CIF or FOB amount of your selected vehicle.
-                            </p>
-                        </div>
+                        <h3 class="font-semibold text-gray-900">Bidding</h3>
                     </div>
 
-                    <!-- Step 4: Make Payment -->
-                    <div class="flex flex-col lg:flex-row-reverse items-start lg:items-center gap-6">
-                        <div class="flex items-center gap-4 min-w-fit lg:flex-row-reverse mx-auto lg:mx-0">
-                            <div
-                                class="w-12 xl:w-16 h-12 xl:h-16 rounded-full border-4 border-emerald-500 flex items-center justify-center">
-                                <i class="fas fa-credit-card text-lg xl:text-xl text-primary"></i>
-                            </div>
-                            <div class="bg-white border-4 border-emerald-500 rounded-full  px-2 xl:px-4 py-2 xl:py-3">
-                                <h3 class="text-lg xl:text-xl font-bold text-primary">Make Payment</h3>
-                            </div>
+                    <!-- Step 4: Result -->
+                    <div
+                        class="bg-white border-2 border-primary rounded-lg p-2 lg:p-4 2xl:p-6 text-center transition-colors duration-200 group">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 bg-red-50 rounded-full flex items-center justify-center transition-colors duration-200">
+                            <i class="fas fa-clipboard-list text-red-500 text-xl"></i>
                         </div>
-                        <div class="flex-1">
-                            <p class="text-gray-700 leading-relaxed lg:text-right">
-                                KM Auto Export offers you the most reliable and flexible payment system. In this option,
-                                you have to make the payment as per the invoice sent.
-                            </p>
-                        </div>
+                        <h3 class="font-semibold text-gray-900">Result</h3>
                     </div>
 
-                    <!-- Step 5: Shipment -->
-                    <div class="flex flex-col lg:flex-row items-start lg:items-center gap-6">
-                        <div class="flex items-center gap-4 min-w-fit mx-auto lg:mx-0">
-                            <div
-                                class="w-12 xl:w-16 h-12 xl:h-16 rounded-full border-4 border-emerald-500 flex items-center justify-center">
-                                <i class="fas fa-ship text-lg xl:text-xl text-primary"></i>
-                            </div>
-                            <div class="bg-white border-4 border-emerald-500 rounded-full  px-2 xl:px-4 py-2 xl:py-3">
-                                <h3 class="text-lg xl:text-xl font-bold text-primary">Shipment & Documentation</h3>
-                            </div>
+                    <!-- Step 5: Payment -->
+                    <div
+                        class="bg-white border-2 border-primary rounded-lg p-2 lg:p-4 2xl:p-6 text-center transition-colors duration-200 group">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 bg-red-50 rounded-full flex items-center justify-center transition-colors duration-200">
+                            <i class="fas fa-credit-card text-red-500 text-xl"></i>
                         </div>
-                        <div class="flex-1">
-                            <p class="text-gray-700 leading-relaxed">
-                                This process will start instantly when we receive your payment and confirmation.
-                                Whenever we receive your money, we will ship your car in your desired destination. We
-                                will send you all the papers through DHL.
-                            </p>
-                        </div>
+                        <h3 class="font-semibold text-gray-900">Payment</h3>
                     </div>
 
+                    <!-- Step 6: Shipment -->
+                    <div
+                        class="bg-white border-2 border-primary rounded-lg p-2 lg:p-4 2xl:p-6 text-center transition-colors duration-200 group">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 bg-red-50 rounded-full flex items-center justify-center transition-colors duration-200">
+                            <i class="fas fa-ship text-red-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900">Shipment</h3>
+                    </div>
+
+                    <!-- Step 7: Delivery -->
+                    <div
+                        class="bg-white border-2 border-primary rounded-lg p-2 lg:p-4 2xl:p-6 text-center transition-colors duration-200 group">
+                        <div
+                            class="w-12 h-12 mx-auto mb-3 bg-red-50 rounded-full flex items-center justify-center transition-colors duration-200">
+                            <i class="fas fa-truck text-red-500 text-xl"></i>
+                        </div>
+                        <h3 class="font-semibold text-gray-900">Delivery</h3>
+                    </div>
                 </div>
-            </section>
-            <!-- contact section -->
-            <section class="bg-gray-100 container mx-auto px-4 mb-12 lg:mb-20 py-16">
-                <div class="mx-auto px-4 max-w-7xl">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
-                        <!-- Left Side - Content -->
-                        <div class="space-y-8">
-                            <!-- Main Heading -->
+                <!-- Detailed Steps -->
+                <div class="space-y-8">
+                    <!-- Step 1: Sign Up -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-user-plus text-red-500 text-xl"></i>
+                            </div>
                             <div>
-                                <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800 leading-tight mb-6">
-                                    Visit & Contact With Us
-                                </h2>
-                                <p class="text-lg text-gray-600 leading-relaxed">
-                                    From anywhere you can buy your desired cars. We are providing our services all over
-                                    the
-                                    world with our extensive experiences in the automotive field.
-                                </p>
-                            </div>
-
-                            <!-- Contact Information -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <!-- Address -->
-                                <div class="flex items-start space-x-4">
-                                    <div
-                                        class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <i class="fas fa-map-marker-alt text-white text-lg"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Address</h3>
-                                        <address class="text-gray-600">939-0305 Toyama-Ken, Imizu-Shi Washizuka 108-6
-                                        </address>
-                                    </div>
-                                </div>
-
-                                <!-- Contact -->
-                                <div class="flex items-start space-x-4">
-                                    <div
-                                        class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <i class="fas fa-envelope text-white text-lg"></i>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Contact</h3>
-                                        <a href="mailto:kmautojp1@gmail.com"
-                                            class="text-gray-600 mb-1 hover:text-red-600 transition-colors">kmautojp1@gmail.com</a>
-                                        <a href="tel:+81766732447"
-                                            class="text-gray-600 mb-1 hover:text-red-600 transition-colors">+81766-732447</a>
-                                        <a href="tel:+81766732448"
-                                            class="text-gray-600 hover:text-red-600 transition-colors">+81766-732448</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Office Hours -->
-                            <div class="pt-4">
-                                <p class="text-gray-600">
-                                    <span class="font-semibold">Office Hours:</span> Mon - Sat: 8:00 AM - 10:00 PM
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Sign Up</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    To start the procedure, you need to sign up on our website. There is an easy signup
+                                    option by which you can do it at a glance. We do not take any charge for signing up
+                                    in our website. You just need to share your required information and confirm the
+                                    account from your email.
                                 </p>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- Right Side - Contact Form -->
-                        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-10">
-                            <div class="mb-8">
-                                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                                    Fill The Contact Form
-                                </h3>
-                                <p class="text-gray-600">
-                                    Feel free to contact with us, we don't spam your email
+                    <!-- Step 2: Deposit -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-university text-red-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Deposit</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    When you take part in the bidding process, you will need to pay a security deposit.
+                                    The deposited amount is absolutely refundable if there is any unsuccessful bidding
+                                    happens. Moreover if you want to bid another car with that amount, you can do it
+                                    without any further charge. What will happen to the security deposit with the
+                                    successful bidding? We do adjust the security deposit with the invoice amount of the
+                                    vehicle you buy from the auction.
                                 </p>
                             </div>
-
-                            <form class="space-y-6">
-                                <!-- Name Field -->
-                                <div>
-                                    <input type="text" placeholder="Your name"
-                                        class="w-full px-4 py-4 border-0 border-b-2 border-gray-200 bg-transparent text-gray-800 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors duration-300">
-                                </div>
-
-                                <!-- Subject Field -->
-                                <div>
-                                    <input type="text" placeholder="Subject"
-                                        class="w-full px-4 py-4 border-0 border-b-2 border-gray-200 bg-transparent text-gray-800 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors duration-300">
-                                </div>
-
-                                <!-- Email Field -->
-                                <div>
-                                    <input type="email" placeholder="Email address"
-                                        class="w-full px-4 py-4 border-0 border-b-2 border-gray-200 bg-transparent text-gray-800 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors duration-300">
-                                </div>
-
-                                <!-- Message Field -->
-                                <div>
-                                    <textarea rows="5" placeholder="Write your message"
-                                        class="w-full px-4 py-4 border-0 border-b-2 border-gray-200 bg-transparent text-gray-800 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors duration-300 resize-none"></textarea>
-                                </div>
-
-                                <!-- Submit Button -->
-                                <div class="pt-6">
-                                    <button type="submit"
-                                        class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
                         </div>
+                    </div>
 
+                    <!-- Step 3: Bidding -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-gavel text-red-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Bidding</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    You are open to select any vehicle from our list and also can set your bidding
+                                    range. After that, we will bid your selected vehicle from the auction and win it for
+                                    you. The good news is, you do not need to pay any amount if the bid, unfortunately,
+                                    gets unsuccessful.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Result -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clipboard-list text-red-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Result</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    From our member area, you will be notified of the result of the auction. Moreover,
+                                    we will inform you of the result by email. When the bid will be successful, we will
+                                    provide you the invoice containing the CIF amount of your selected vehicle.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Payment -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-credit-card text-red-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Payment</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    iCar Japan offers you the most reliable and flexible payment system. In this option,
+                                    you have to make the payment as per the invoice sent.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6: Shipment -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-ship text-red-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Shipment</h3>
+                                <p class="text-gray-600 leading-relaxed mb-4">
+                                    This process will start instantly when we receive your payment and confirmation.
+                                    Whenever we receive your money, we will ship your car in your desired destination.
+                                    We will send you all the papers through DHL for costumes clearance. The sent
+                                    documents are:
+                                </p>
+                                <ul class="space-y-2 text-gray-600">
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle text-green-500 text-sm"></i>
+                                        <span>Export Certificate</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle text-green-500 text-sm"></i>
+                                        <span>Bill of Lading</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle text-green-500 text-sm"></i>
+                                        <span>Final Invoice</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle text-green-500 text-sm"></i>
+                                        <span>Marine Insurance (if required)</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle text-green-500 text-sm"></i>
+                                        <span>Inspection Certificate</span>
+                                    </li>
+                                    <li class="flex items-center space-x-2">
+                                        <i class="fas fa-check-circle text-green-500 text-sm"></i>
+                                        <span>Vehicle Delivered to the Port</span>
+                                    </li>
+                                </ul>
+                                <p class="text-gray-600 leading-relaxed mt-4">
+                                    The final step is the delivery of the vehicle to the selected port. It will be
+                                    delivered as per the schedule. Here, we suggest you to bring all the documents
+                                    provided by us for a smooth clearing process.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 7: Delivery -->
+                    <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-red-50 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-truck text-red-500 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-semibold text-gray-900 mb-2">Delivery</h3>
+                                <p class="text-gray-600 leading-relaxed">
+                                    The final step is the delivery of the vehicle to the selected port. It will be
+                                    delivered as per the schedule. Here, we suggest you bring all the documents provided
+                                    by us for a smooth clearing process.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

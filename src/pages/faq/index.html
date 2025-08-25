@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-
     <!-- Font Awesome CDN -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
@@ -21,7 +20,9 @@
         <div class="container mx-auto flex gap-2 justify-between items-center p-4">
             <!-- Logo Section -->
             <div class=" md:w-2/5 text-xl sm:text-2xl md:text-3xl font-bold text-black">
-                ReviveRides
+                <a href="/src/pages/home">
+                    KM Autos
+                </a>
             </div>
             <div class="hidden sm:flex items-center md:w-3/5 gap-2">
                 <!-- Search Bar -->
@@ -35,9 +36,9 @@
                 </div>
 
                 <!-- Advanced Search Button -->
-                <a href="#advance-search"
+                <a href="/src/pages/login"
                     class="hidden md:block hover:text-gray-200 cursor-pointer border px-4 py-1 rounded-md bg-secondary text-white text-nowrap">
-                    Advance Search
+                    Login
                 </a>
             </div>
         </div>
@@ -46,70 +47,69 @@
         <nav class="bg-primary text-white sticky top-0 z-50 shadow-lg">
             <div class="max-w-7xl mx-auto px-4">
                 <!-- Desktop Navigation -->
-                <div class="hidden md:flex items-center justify-center py-3">
-                    <ul class="flex space-x-8 font-bold text-sm">
-                        <li>
-                            <a href="#" class="hover:text-red-200 transition-colors">Home</a>
+                <div class="hidden md:flex items-center justify-center h-12">
+                    <ul class="flex space-x-8 font-bold text-sm h-full items-center">
+                        <li class="h-full flex items-center">
+                            <a href="/src/pages/home" class="hover:text-red-200 transition-colors">Home</a>
                         </li>
 
                         <!-- Car Search Dropdown -->
-                        <li class="relative group">
+                        <li class="relative group h-full flex items-center">
                             <button class="hover:text-red-200 transition-colors flex items-center">
                                 Car Search <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Search by Make</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Search by Model</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Advanced Search</a>
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/cars#search-by-brands"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Brands</a>
+                                <a href="/src/pages/cars#search-by-price"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Price</a>
+                                <a href="/src/pages/cars#search-by-discount"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Discount</a>
+                                <a href="/src/pages/cars#search-by-type" class="block px-4 py-2 hover:bg-red-700">Search
+                                    by Type</a>
+                                <a href="/src/pages/cars#search-by-category"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Category</a>
                             </div>
                         </li>
 
                         <!-- How to Order Dropdown -->
-                        <li class="relative group">
+                        <li class="relative group h-full flex items-center">
                             <button class="hover:text-red-200 transition-colors flex items-center">
                                 How to Order <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Step by Step</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Payment Methods</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Shipping Info</a>
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/how-to-order-from-auction"
+                                    class="block px-4 py-2 hover:bg-red-700">Auction Order Process</a>
+                                <a href="/src/pages/how-to-buy-from-stock" class="block px-4 py-2 hover:bg-red-700">How
+                                    To Buy From Stock</a>
                             </div>
                         </li>
 
                         <!-- Services Dropdown -->
-                        <li class="relative group">
+                        <li class="relative group h-full flex items-center">
                             <button class="hover:text-red-200 transition-colors flex items-center">
                                 Services <span class="ml-1 text-xs">▼</span>
                             </button>
                             <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Inspection</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Shipping</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Documentation</a>
-                            </div>
-                        </li>
-
-                        <!-- About Us Dropdown -->
-                        <li class="relative group">
-                            <button class="hover:text-red-200 transition-colors flex items-center">
-                                About Us <span class="ml-1 text-xs">▼</span>
-                            </button>
-                            <div
-                                class="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Our Story</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Team</a>
-                                <a href="#" class="block px-4 py-2 hover:bg-red-700">Contact</a>
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/services" class="block px-4 py-2 hover:bg-red-700">Shipping</a>
+                                <a href="/src/pages/why-choose-us" class="block px-4 py-2 hover:bg-red-700">Why Choose
+                                    Us</a>
                             </div>
                         </li>
 
                         <li>
-                            <a href="#" class="hover:text-red-200 transition-colors">Auction</a>
+                            <a href="/src/pages/about-us" class="hover:text-red-200 transition-colors">About Us</a>
                         </li>
 
                         <li>
-                            <a href="#" class="hover:text-red-200 transition-colors">Reviews</a>
+                            <a href="/src/pages/contact-us" class="hover:text-red-200 transition-colors">Contact Us</a>
+                        </li>
+
+                        <li>
+                            <a href="/src/pages/faq" class="hover:text-red-200 transition-colors">FAQ</a>
                         </li>
                     </ul>
                 </div>
@@ -129,7 +129,7 @@
                     <!-- Mobile Menu -->
                     <div id="mobileMenu" class="overflow-hidden max-h-0 transition-all duration-300 ease-out">
                         <div class="py-2 space-y-1">
-                            <a href="#" class="block px-4 py-2 hover:bg-red-600">Home</a>
+                            <a href="/src/pages/home" class="block px-4 py-2 hover:bg-red-600">Home</a>
 
                             <!-- Mobile Car Search -->
                             <div class="mobile-dropdown">
@@ -139,9 +139,16 @@
                                     Car Search <span class="text-xs">▼</span>
                                 </button>
                                 <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Search by Make</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Search by Model</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Advanced Search</a>
+                                    <a href="/src/pages/cars#search-by-brands"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Brands</a>
+                                    <a href="/src/pages/cars#search-by-price"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Price</a>
+                                    <a href="/src/pages/cars#search-by-discount"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Discount</a>
+                                    <a href="/src/pages/cars#search-by-type"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Type</a>
+                                    <a href="/src/pages/cars#search-by-category"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Category</a>
                                 </div>
                             </div>
 
@@ -153,9 +160,11 @@
                                     How to Order <span class="text-xs">▼</span>
                                 </button>
                                 <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Step by Step</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Payment Methods</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Shipping Info</a>
+                                    <a href="/src/pages/how-to-order-from-auction"
+                                        class="block px-8 py-2 hover:bg-red-700">Auction Order Process</a>
+                                    <a href="/src/pages/how-to-buy-from-stock"
+                                        class="block px-8 py-2 hover:bg-red-700">How
+                                        To Buy From Stock</a>
                                 </div>
                             </div>
 
@@ -167,28 +176,18 @@
                                     Services <span class="text-xs">▼</span>
                                 </button>
                                 <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Inspection</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Shipping</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Documentation</a>
+                                    <a href="/src/pages/services" class="block px-8 py-2 hover:bg-red-700">Shipping</a>
+                                    <a href="/src/pages/why-choose-us" class="block px-8 py-2 hover:bg-red-700">Why
+                                        Choose Us</a>
                                 </div>
                             </div>
 
                             <!-- Mobile About Us -->
-                            <div class="mobile-dropdown">
-                                <button
-                                    class="w-full text-left px-4 py-2 hover:bg-red-600 flex items-center justify-between"
-                                    onclick="toggleMobileDropdown(this)">
-                                    About Us <span class="text-xs">▼</span>
-                                </button>
-                                <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Our Story</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Team</a>
-                                    <a href="#" class="block px-8 py-2 hover:bg-red-700">Contact</a>
-                                </div>
-                            </div>
-
-                            <a href="#" class="block px-4 py-2 hover:bg-red-600">Auction</a>
-                            <a href="#" class="block px-4 py-2 hover:bg-red-600">Reviews</a>
+                            <a href="/src/pages/about-us" class="block px-4 py-2 hover:bg-red-600">About Us</a>
+                            <!-- Mobile Contact Us -->
+                            <a href="/src/pages/contact-us" class="block px-4 py-2 hover:bg-red-600">Contact Us</a>
+                            <!-- Mobile FAQ -->
+                            <a href="/src/pages/faq" class="block px-4 py-2 hover:bg-red-600">FAQ</a>
                         </div>
                     </div>
                 </div>
@@ -224,343 +223,245 @@
                     </li>
                 </ol>
             </nav>
+            <p class="text-gray-600 text-lg max-w-2xl mx-auto pt-4">
+                Find answers to common questions about our services and vehicle purchasing process
+            </p>
         </div>
         <!-- Main Content -->
         <article>
             <!-- FAQ -->
-            <div class="max-w-4xl mx-auto py-12 px-4">
-                <!-- Section Header -->
-                <div class="text-center mb-12">
-                    <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-                        Find answers to common questions about our services and vehicle purchasing process
-                    </p>
+            <div class="max-w-4xl mx-auto pt-8 pb-12 px-4">
+                <!-- FAQ Section with Tabs -->
+                <div class="space-y-6">
+                    <!-- FAQ Tabs -->
+                    <div class="border-b border-gray-200">
+                        <nav class="-mb-px flex space-x-8">
+                            <button
+                                class="tab-button py-3 px-1 border-b-2 font-medium text-sm transition-colors duration-200 border-red-500 text-red-600"
+                                data-tab="about">
+                                About | KM Auto Japan
+                            </button>
+                            <button
+                                class="tab-button py-3 px-1 border-b-2 font-medium text-sm transition-colors duration-200 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                                data-tab="shipment">
+                                About Shipment
+                            </button>
+                            <button
+                                class="tab-button py-3 px-1 border-b-2 font-medium text-sm transition-colors duration-200 border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300"
+                                data-tab="payment">
+                                About Payment
+                            </button>
+                        </nav>
+                    </div>
+
+                    <!-- FAQ Content Tabs -->
+                    <div class="tab-content-container">
+                        <!-- About ICARJAPAN Tab -->
+                        <div class="tab-content space-y-4" id="about-tab">
+                            <!-- FAQ Item 1 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        What types of vehicles does KM Auto Japan offer?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 transition-all duration-300 bg-gray-50">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        We offer a wide range of vehicles including sedans, SUVs, trucks, buses,
+                                        motorcycles, and commercial vehicles from all major Japanese manufacturers like
+                                        Toyota, Honda, Nissan, Mazda, and more.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        Are the vehicles inspected and certified?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        Yes, all our vehicles undergo thorough inspection and come with detailed
+                                        condition reports. We provide complete transparency about vehicle condition,
+                                        history, and specifications.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        How can I purchase a vehicle from ICARJAPAN?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        You can purchase through our website, contact our sales team directly, or
+                                        participate in our auction system. We guide you through the entire process from
+                                        selection to delivery.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About Shipment Tab -->
+                        <div class="tab-content space-y-4 hidden" id="shipment-tab">
+                            <!-- FAQ Item 1 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        How long does shipping take?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 transition-all duration-300 bg-gray-50">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        Shipping typically takes 2-6 weeks depending on the destination port. We provide
+                                        regular updates on shipping schedules and vessel tracking information.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        What documents are provided for shipping?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        We provide all necessary documents including Export Certificate, Bill of Lading,
+                                        Final Invoice, Marine Insurance (if required), and Inspection Certificate.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        Do you provide insurance for shipment?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        Yes, we offer marine insurance coverage for your vehicle during transit. This
+                                        protects against damage or loss during shipping at a competitive rate.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- About Payment Tab -->
+                        <div class="tab-content space-y-4 hidden" id="payment-tab">
+                            <!-- FAQ Item 1 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-all duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        What payment methods do you accept?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 transition-all duration-300 bg-gray-50">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        We accept bank transfers (T/T), letters of credit (L/C), and other secure
+                                        international payment methods. All payments are processed through secure banking
+                                        channels.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 2 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        When do I need to make payment?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        For auction purchases, a deposit is required before bidding. For stock
+                                        purchases, payment is made after receiving the proforma invoice. Full payment is
+                                        required before shipment.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- FAQ Item 3 -->
+                            <div
+                                class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
+                                <button
+                                    class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between">
+                                    <span class="text-lg font-semibold pr-4">
+                                        Are there any additional charges?
+                                    </span>
+                                    <div
+                                        class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+                                        <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
+                                    </div>
+                                </button>
+                                <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
+                                    <p class="text-gray-700 leading-relaxed px-6 pb-5">
+                                        All charges are transparently mentioned in our quotation including vehicle
+                                        price, shipping, insurance, and handling fees. No hidden charges are applied.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <!-- FAQ Items -->
-                <div class="space-y-4">
-                    <!-- FAQ Item 1 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-all duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                What types of vehicles does KM Auto Japan offer?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 transition-all duration-300 bg-gray-50">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                We offer a wide range of vehicles including sedans, SUVs, trucks, buses, motorcycles,
-                                and commercial vehicles from all major Japanese manufacturers like Toyota, Honda,
-                                Nissan, Mazda, and more.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 2 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                Are the vehicles inspected and certified?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                Yes, all our vehicles undergo thorough inspection and come with detailed condition
-                                reports. We provide complete transparency about vehicle condition, history, and
-                                specifications.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 3 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                Do you offer financing options?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                We provide flexible payment options and can assist you in finding suitable financing
-                                solutions through our network of trusted financial partners.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 4 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                What is the process for purchasing a vehicle from KM Auto Japan?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                The process involves: 1) Sign up on our website, 2) Browse and select your vehicle, 3)
-                                Place your bid, 4) Receive auction results, 5) Make payment, 6) Vehicle shipment and
-                                documentation.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 5 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                Can you assist with shipping or delivery?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                Absolutely! We handle all shipping arrangements and documentation. We ship worldwide and
-                                provide tracking information so you can monitor your vehicle's journey.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 6 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                Are your vehicles covered by warranties?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                We offer various warranty options depending on the vehicle type and condition. Our team
-                                will discuss available warranty plans during the purchase process.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 7 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                What do I have to do to buy a car?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                Simply create an account, browse our inventory, select your preferred vehicle, set your
-                                budget, and let us handle the bidding process for you. No upfront fees required.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 8 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                Do you offer post-purchase support or maintenance services?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                Yes, we provide ongoing support and can connect you with authorized service centers in
-                                your area. We also offer genuine parts sourcing services.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 9 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                How can I contact KM Auto Japan for further assistance?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                You can reach us via email, phone, or live chat on our website. Our customer service
-                                team is available to assist you throughout the entire process.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Item 10 -->
-                    <div
-                        class="faq-item group border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300">
-                        <button
-                            class="faq-button w-full px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-200 flex items-center justify-between ">
-                            <span class="text-lg font-semibold pr-4">
-                                Do you have any criteria to become a registered member of KM Auto Japan?
-                            </span>
-                            <div
-                                class="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
-                                <i class="faq-icon fas fa-plus text-sm transition-transform duration-200"></i>
-                            </div>
-                        </button>
-                        <div class="faq-content max-h-0 bg-gray-50 transition-all duration-300">
-                            <p class="text-gray-700 leading-relaxed px-6 pb-5">
-                                Registration is free and open to everyone. You just need to provide basic information
-                                and verify your email address. No special criteria or fees required to become a member.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <!-- contact section -->
-            <section class="bg-gray-100 container mx-auto px-4 mb-12 lg:mb-20 py-16">
-                <div class="mx-auto px-4 max-w-7xl">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
-
-                        <!-- Left Side - Content -->
-                        <div class="space-y-8">
-                            <!-- Main Heading -->
-                            <div>
-                                <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold text-gray-800 leading-tight mb-6">
-                                    Visit & Contact With Us
-                                </h2>
-                                <p class="text-lg text-gray-600 leading-relaxed">
-                                    From anywhere you can buy your desired cars. We are providing our services all over
-                                    the
-                                    world with our extensive experiences in the automotive field.
-                                </p>
-                            </div>
-
-                            <!-- Contact Information -->
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <!-- Address -->
-                                <div class="flex items-start space-x-4">
-                                    <div
-                                        class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <i class="fas fa-map-marker-alt text-white text-lg"></i>
-                                    </div>
-                                    <div>
-                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Address</h3>
-                                        <address class="text-gray-600">939-0305 Toyama-Ken, Imizu-Shi Washizuka 108-6
-                                        </address>
-                                    </div>
-                                </div>
-
-                                <!-- Contact -->
-                                <div class="flex items-start space-x-4">
-                                    <div
-                                        class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <i class="fas fa-envelope text-white text-lg"></i>
-                                    </div>
-                                    <div class="flex flex-col">
-                                        <h3 class="text-xl font-bold text-gray-800 mb-2">Contact</h3>
-                                        <a href="mailto:kmautojp1@gmail.com"
-                                            class="text-gray-600 mb-1 hover:text-red-600 transition-colors">kmautojp1@gmail.com</a>
-                                        <a href="tel:+81766732447"
-                                            class="text-gray-600 mb-1 hover:text-red-600 transition-colors">+81766-732447</a>
-                                        <a href="tel:+81766732448"
-                                            class="text-gray-600 hover:text-red-600 transition-colors">+81766-732448</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Office Hours -->
-                            <div class="pt-4">
-                                <p class="text-gray-600">
-                                    <span class="font-semibold">Office Hours:</span> Mon - Sat: 8:00 AM - 10:00 PM
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Right Side - Contact Form -->
-                        <div class="bg-white rounded-2xl shadow-lg p-8 md:p-10">
-                            <div class="mb-8">
-                                <h3 class="text-xl md:text-2xl font-bold text-gray-800 mb-2">
-                                    Fill The Contact Form
-                                </h3>
-                                <p class="text-gray-600">
-                                    Feel free to contact with us, we don't spam your email
-                                </p>
-                            </div>
-
-                            <form class="space-y-6">
-                                <!-- Name Field -->
-                                <div>
-                                    <input type="text" placeholder="Your name"
-                                        class="w-full px-4 py-4 border-0 border-b-2 border-gray-200 bg-transparent text-gray-800 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors duration-300">
-                                </div>
-
-                                <!-- Subject Field -->
-                                <div>
-                                    <input type="text" placeholder="Subject"
-                                        class="w-full px-4 py-4 border-0 border-b-2 border-gray-200 bg-transparent text-gray-800 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors duration-300">
-                                </div>
-
-                                <!-- Email Field -->
-                                <div>
-                                    <input type="email" placeholder="Email address"
-                                        class="w-full px-4 py-4 border-0 border-b-2 border-gray-200 bg-transparent text-gray-800 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors duration-300">
-                                </div>
-
-                                <!-- Message Field -->
-                                <div>
-                                    <textarea rows="5" placeholder="Write your message"
-                                        class="w-full px-4 py-4 border-0 border-b-2 border-gray-200 bg-transparent text-gray-800 placeholder-gray-500 focus:border-red-600 focus:outline-none transition-colors duration-300 resize-none"></textarea>
-                                </div>
-
-                                <!-- Submit Button -->
-                                <div class="pt-6">
-                                    <button type="submit"
-                                        class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg transition-colors duration-300">
-                                        Send Message
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
         </article>
         <!-- WhatsApp and Go to Top Button -->
         <div class="fixed bottom-6 right-4 flex flex-col gap-3 z-50 md:right-6">

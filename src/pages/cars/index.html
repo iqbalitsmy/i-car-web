@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <!-- style -->
+    <link href="../../styles/output.css" rel="stylesheet">
+    <link href="../home/home.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="" style="display: unset;">
+        <!-- top header -->
+        <div class="container mx-auto flex gap-2 justify-between items-center p-4">
+            <!-- Logo Section -->
+            <div class=" md:w-2/5 text-xl sm:text-2xl md:text-3xl font-bold text-black">
+                <a href="/src/pages/home">
+                    KM Autos
+                </a>
+            </div>
+            <div class="hidden sm:flex items-center md:w-3/5 gap-2">
+                <!-- Search Bar -->
+                <div class="flex items-center border border-gray-300 rounded-lg w-full">
+                    <input type="text" placeholder="Search here ..."
+                        class="px-2 md:px-4 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-l-md w-full grow">
+                    <button
+                        class="bg-primary text-white px-2 md:px-4 py-1 rounded-r-md hover:bg-red-600 cursor-pointer">
+                        Search
+                    </button>
+                </div>
+
+                <!-- Advanced Search Button -->
+                <a href="/src/pages/login"
+                    class="hidden md:block hover:text-gray-200 cursor-pointer border px-4 py-1 rounded-md bg-secondary text-white text-nowrap">
+                    Login
+                </a>
+            </div>
+        </div>
+
+        <!-- Navigation Section -->
+        <nav class="bg-primary text-white sticky top-0 z-50 shadow-lg">
+            <div class="max-w-7xl mx-auto px-4">
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center justify-center h-12">
+                    <ul class="flex space-x-8 font-bold text-sm h-full items-center">
+                        <li class="h-full flex items-center">
+                            <a href="/src/pages/home" class="hover:text-red-200 transition-colors">Home</a>
+                        </li>
+
+                        <!-- Car Search Dropdown -->
+                        <li class="relative group h-full flex items-center">
+                            <button class="hover:text-red-200 transition-colors flex items-center">
+                                Car Search <span class="ml-1 text-xs">▼</span>
+                            </button>
+                            <div
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/cars#search-by-brands"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Brands</a>
+                                <a href="/src/pages/cars#search-by-price"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Price</a>
+                                <a href="/src/pages/cars#search-by-discount"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Discount</a>
+                                <a href="/src/pages/cars#search-by-type" class="block px-4 py-2 hover:bg-red-700">Search
+                                    by Type</a>
+                                <a href="/src/pages/cars#search-by-category"
+                                    class="block px-4 py-2 hover:bg-red-700">Search by Category</a>
+                            </div>
+                        </li>
+
+                        <!-- How to Order Dropdown -->
+                        <li class="relative group h-full flex items-center">
+                            <button class="hover:text-red-200 transition-colors flex items-center">
+                                How to Order <span class="ml-1 text-xs">▼</span>
+                            </button>
+                            <div
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/how-to-order-from-auction"
+                                    class="block px-4 py-2 hover:bg-red-700">Auction Order Process</a>
+                                <a href="/src/pages/how-to-buy-from-stock" class="block px-4 py-2 hover:bg-red-700">How
+                                    To Buy From Stock</a>
+                            </div>
+                        </li>
+
+                        <!-- Services Dropdown -->
+                        <li class="relative group h-full flex items-center">
+                            <button class="hover:text-red-200 transition-colors flex items-center">
+                                Services <span class="ml-1 text-xs">▼</span>
+                            </button>
+                            <div
+                                class="absolute top-full left-1/2 transform -translate-x-1/2 w-48 bg-primary text-white rounded shadow-lg overflow-hidden max-h-0 opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-out">
+                                <a href="/src/pages/services" class="block px-4 py-2 hover:bg-red-700">Shipping</a>
+                                <a href="/src/pages/why-choose-us" class="block px-4 py-2 hover:bg-red-700">Why Choose
+                                    Us</a>
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="/src/pages/about-us" class="hover:text-red-200 transition-colors">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="/src/pages/contact-us" class="hover:text-red-200 transition-colors">Contact Us</a>
+                        </li>
+
+                        <li>
+                            <a href="/src/pages/faq" class="hover:text-red-200 transition-colors">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Navigation -->
+                <div class="md:hidden">
+                    <div class="flex items-center justify-between py-3">
+                        <span class="font-bold text-lg">Menu</span>
+                        <button id="mobileMenuBtn" class="focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div id="mobileMenu" class="overflow-hidden max-h-0 transition-all duration-300 ease-out">
+                        <div class="py-2 space-y-1">
+                            <a href="/src/pages/home" class="block px-4 py-2 hover:bg-red-600">Home</a>
+
+                            <!-- Mobile Car Search -->
+                            <div class="mobile-dropdown">
+                                <button
+                                    class="w-full text-left px-4 py-2 hover:bg-red-600 flex items-center justify-between"
+                                    onclick="toggleMobileDropdown(this)">
+                                    Car Search <span class="text-xs">▼</span>
+                                </button>
+                                <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
+                                    <a href="/src/pages/cars#search-by-brands"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Brands</a>
+                                    <a href="/src/pages/cars#search-by-price"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Price</a>
+                                    <a href="/src/pages/cars#search-by-discount"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Discount</a>
+                                    <a href="/src/pages/cars#search-by-type"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Type</a>
+                                    <a href="/src/pages/cars#search-by-category"
+                                        class="block px-8 py-2 hover:bg-red-700">Search by Category</a>
+                                </div>
+                            </div>
+
+                            <!-- Mobile How to Order -->
+                            <div class="mobile-dropdown">
+                                <button
+                                    class="w-full text-left px-4 py-2 hover:bg-red-600 flex items-center justify-between"
+                                    onclick="toggleMobileDropdown(this)">
+                                    How to Order <span class="text-xs">▼</span>
+                                </button>
+                                <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
+                                    <a href="/src/pages/how-to-order-from-auction"
+                                        class="block px-8 py-2 hover:bg-red-700">Auction Order Process</a>
+                                    <a href="/src/pages/how-to-buy-from-stock"
+                                        class="block px-8 py-2 hover:bg-red-700">How
+                                        To Buy From Stock</a>
+                                </div>
+                            </div>
+
+                            <!-- Mobile Services -->
+                            <div class="mobile-dropdown">
+                                <button
+                                    class="w-full text-left px-4 py-2 hover:bg-red-600 flex items-center justify-between"
+                                    onclick="toggleMobileDropdown(this)">
+                                    Services <span class="text-xs">▼</span>
+                                </button>
+                                <div class="overflow-hidden max-h-0 transition-all duration-300 ease-out bg-red-600">
+                                    <a href="/src/pages/services" class="block px-8 py-2 hover:bg-red-700">Shipping</a>
+                                    <a href="/src/pages/why-choose-us" class="block px-8 py-2 hover:bg-red-700">Why
+                                        Choose Us</a>
+                                </div>
+                            </div>
+
+                            <!-- Mobile About Us -->
+                            <a href="/src/pages/about-us" class="block px-4 py-2 hover:bg-red-600">About Us</a>
+                            <!-- Mobile Contact Us -->
+                            <a href="/src/pages/contact-us" class="block px-4 py-2 hover:bg-red-600">Contact Us</a>
+                            <!-- Mobile FAQ -->
+                            <a href="/src/pages/faq" class="block px-4 py-2 hover:bg-red-600">FAQ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto flex gap-4 p-4 mb-12 lg:mb-20">
+        <!-- search section -->
+        <aside class="gap-4 hidden lg:flex flex-col md:w-52">
+            <!-- SEARCH BY BRANDS -->
+            <div id="search-by-brands" class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <!-- Header -->
+                <div class="bg-secondary text-white py-3 px-4">
+                    <h3 class="text-sm font-bold">SEARCH BY BRANDS</h3>
+                </div>
+                <!-- Brand List -->
+                <div class="bg-white">
+                    <ul class="divide-y divide-gray-100">
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/toyota.png" alt="Toyota"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">TOYOTA</span>
+                            </div>
+                            <span class="text-xs 2xl:text-sm text-gray-500">(2511)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/honda.png" alt="Honda"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">HONDA</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(633)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/nissan.png" alt="Nissan"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">NISSAN</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(1123)</span>
+                        </li>
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/toyota.png" alt="Mazda"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">MAZDA</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(1083)</span>
+                        </li>
+
+                        <li
+                            class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer bg-red-50">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/honda.png" alt="Suzuki"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-sm text-red-600 font-medium">SUZUKI</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(247)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/nissan.png" alt="Mitsubishi"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">MITSUBISHI</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(310)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/toyota.png" alt="Daihatsu"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">DAIHATSU</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(191)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/honda.png" alt="Subaru"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">SUBARU</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(260)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/nissan.png" alt="Hino"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">HINO</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(12)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/toyota.png" alt="Volkswagen"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">VOLKSWAGEN</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(1)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/honda.png" alt="BMW"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">BMW</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(5)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/nissan.png" alt="Isuzu"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">ISUZU</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(70)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/toyota.png" alt="Lexus"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">LEXUS</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(5)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/honda.png" alt="Mercedes"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">MERCEDES</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(1)</span>
+                        </li>
+
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <img src="../../assets/car-logo/nissan.png" alt="Audi"
+                                    class="w-4 2xl:w-5 h-4 2xl:h-5 mr-2 2xl:mr-3">
+                                <span class="text-xs 2xl:text-sm text-gray-700">AUDI</span>
+                            </div>
+                            <span class="text-sm text-gray-500">(1)</span>
+                        </li>
+                        <!-- ...repeat pattern for the rest of the brands, alternating the three images... -->
+                    </ul>
+                </div>
+            </div>
+
+            <!--  Search By Price -->
+            <div id="search-by-price" class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <!-- Header -->
+                <div class="bg-secondary text-white py-3 px-4">
+                    <h3 class="text-sm font-bold uppercase">Search By Price</h3>
+                </div>
+
+                <!-- price List -->
+                <div class="bg-white">
+                    <ul class="divide-y divide-gray-100 text-xs 2xl:text-sm text-gray-700">
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-dollar-sign mr-2 text-xs"></i>
+                            <span>UNDER USD 500</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-dollar-sign mr-2 text-xs"></i>
+                            <span>UNDER USD 1000</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-dollar-sign mr-2 text-xs"></i>
+                            <span>UNDER USD 1500</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-dollar-sign mr-2 text-xs"></i>
+                            <span>UNDER USD 2000</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-dollar-sign mr-2 text-xs"></i>
+                            <span>UNDER USD 4000</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-dollar-sign mr-2 text-xs"></i>
+                            <span>OVER USD 2000</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Search by Discount -->
+            <div id="search-by-discount" class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <!-- Header -->
+                <div class="bg-secondary text-white py-3 px-4">
+                    <h3 class="text-sm font-bold">SEARCH BY DISCOUNT</h3>
+                </div>
+                <!-- Discount List -->
+                <div class="bg-white">
+                    <ul class="divide-y divide-gray-100 text-xs 2xl:text-sm text-gray-700">
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-percent mr-2 text-xs"></i>
+                            <span>90% - OFF</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-percent mr-2 text-xs"></i>
+                            <span>80% - OFF</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-percent mr-2 text-xs"></i>
+                            <span>70% - OFF</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-percent mr-2 text-xs"></i>
+                            <span>60% - OFF</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-percent mr-2 text-xs"></i>
+                            <span>50% - OFF</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-percent mr-2 text-xs"></i>
+                            <span>40% - OFF</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-percent mr-2 text-xs"></i>
+                            <span>30% - OFF</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-percent mr-2 text-xs"></i>
+                            <span>1% - 20% OFF</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Search by Type -->
+            <div id="search-by-type" class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <!-- Header -->
+                <div class="bg-secondary text-white py-3 px-4">
+                    <h3 class="text-sm font-bold">SEARCH BY TYPE</h3>
+                </div>
+                <!-- type list -->
+                <div class="bg-white">
+                    <ul class="divide-y divide-gray-100 text-xs 2xl:text-sm text-gray-700">
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <i class="fas fa-car mr-2"></i>
+                                <span>SEDAN</span>
+                            </div>
+                            <span class="text-gray-400">(473)</span>
+                        </li>
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <i class="fas fa-car mr-2"></i>
+                                <span>COUPE</span>
+                            </div>
+                            <span class="text-gray-400">(52)</span>
+                        </li>
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <i class="fas fa-car mr-2"></i>
+                                <span>HATCHBACK</span>
+                            </div>
+                            <span class="text-gray-400">(2406)</span>
+                        </li>
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <i class="fas fa-car mr-2"></i>
+                                <span>STATION WAGON</span>
+                            </div>
+                            <span class="text-gray-400">(90)</span>
+                        </li>
+                        <li class="flex items-center justify-between py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <div class="flex items-center">
+                                <i class="fas fa-car mr-2"></i>
+                                <span>SUV</span>
+                            </div>
+                            <span class="text-gray-400">(1502)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Search by Category -->
+            <div id="search-by-category" class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <!-- Header -->
+                <div class="bg-secondary text-white py-3 px-4">
+                    <h3 class="text-sm font-bold">SEARCH BY CATEGORY</h3>
+                </div>
+                <!-- Category List -->
+                <div class="bg-white">
+                    <ul class="divide-y divide-gray-100 text-xs 2xl:text-sm text-gray-700">
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-car mr-2 text-xs"></i>
+                            <span>4WD</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-car mr-2 text-xs"></i>
+                            <span>AWD</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-car mr-2 text-xs"></i>
+                            <span>4.4</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-car mr-2 text-xs"></i>
+                            <span>4.2</span>
+                        </li>
+                        <li class="flex items-center py-2 px-4 hover:bg-gray-50 cursor-pointer">
+                            <i class="fas fa-car mr-2 text-xs"></i>
+                            <span>4.1</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <!-- main content -->
+        <article class="w-full">
+            <!-- important notice -->
+            <div class="bg-red-50 border border-red-200 p-4 mb-6 rounded-lg">
+                <div class="">
+                    <!-- First Notice -->
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-red-500 mr-3 mt-0.5 text-sm"></i>
+                        <p class="text-sm">
+                            <span class="text-red-600 font-medium">Important Notice:</span>
+                            <span class="text-red-700"> Beware of Scams Advising Fake Money Transfer Instructions!
+                            </span>
+                            <a href="#" class="text-red-700 underline hover:text-red-800">See Details</a>
+                        </p>
+                    </div>
+
+                    <!-- Second Notice -->
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-red-500 mr-3 mt-0.5 text-sm"></i>
+                        <p class="text-sm">
+                            <span class="text-red-600 font-medium">Important Notice:</span>
+                            <span class="text-red-700"> About space for vessels. </span>
+                            <a href="#" class="text-red-700 underline hover:text-red-800">See Details</a>
+                        </p>
+                    </div>
+
+                    <!-- Third Notice -->
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-triangle text-red-500 mr-3 mt-0.5 text-sm"></i>
+                        <p class="text-sm">
+                            <span class="text-red-600 font-medium">Important Notice:</span>
+                            <span class="text-red-700"> Beware of Websites, SNS, E-Mails and Invoices impersonating SBT.
+                            </span>
+                            <a href="#" class="text-red-700 underline hover:text-red-800">See Details</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- main content -->
+            <section class="">
+                <div class="flex justify-center flex-col xl:flex-row gap-4">
+                    <!-- cars grid -->
+                    <div class="bg-gray-50 px-3 md:px-4 py-3 md:py-4 mb-6 shadow-sm rounded-sm">
+                        <!-- Section Header -->
+                        <h2 class="text-lg md:text-xl font-semibold text-gray-900 mb-3 md:mb-4">
+                            SUZUKI
+                        </h2>
+
+                        <!-- Cars Grid -->
+                        <div
+                            class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-3 md:gap-4 mb-4 md:mb-6">
+                            <!-- Car 1 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car.jpg" alt="Honda Insight"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            HONDA
+                                            INSIGHT 2021/2 EX</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 2 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car-2.jpg" alt="Toyota Prado"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            TOYOTA
+                                            LAND CRUISER PRADO 2020/1 TZ G</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 3 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car-3.jpg" alt="Toyota Corolla"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            TOYOTA
+                                            COROLLA AXIO 2020/8 EX</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 4 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car.jpg" alt="Honda Insight"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            HONDA
+                                            INSIGHT 2021/2 EX</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 5 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car-2.jpg" alt="Toyota Prado"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            TOYOTA
+                                            LAND CRUISER PRADO 2020/1 TZ G</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 6 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car-3.jpg" alt="Toyota Corolla"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            TOYOTA
+                                            COROLLA AXIO 2020/8 EX</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 7 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car.jpg" alt="Honda Insight"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            HONDA
+                                            INSIGHT 2021/2 EX</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 8 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car-2.jpg" alt="Toyota Prado"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            TOYOTA
+                                            LAND CRUISER PRADO 2020/1 TZ G</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 9 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car-3.jpg" alt="Toyota Corolla"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            TOYOTA
+                                            COROLLA AXIO 2020/8 EX</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Car 10 -->
+                            <div
+                                class="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
+                                <div class="relative">
+                                    <a href="/src/pages/car-details" class="block">
+                                        <img src="../../assets/car-3.jpg" alt="Toyota Corolla"
+                                            class="w-full h-32 sm:h-36 md:h-40 object-cover hover:scale-105 transition-transform duration-300">
+                                    </a>
+                                </div>
+                                <div class="p-2 md:p-3">
+                                    <p class="text-xs text-gray-500 mb-1">6AA-ZE4</p>
+                                    <p class="text-sm md:text-base font-bold text-gray-900 mb-2">BDT 12,00,000.00
+                                    </p>
+                                    <a href="/src/pages/car-details" class="block">
+                                        <p
+                                            class="text-xs md:text-sm text-gray-700 hover:text-blue-600 transition-colors">
+                                            TOYOTA
+                                            COROLLA AXIO 2020/8 EX</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="flex justify-center mt-8">
+                            <nav class="inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                                <!-- Previous -->
+                                <a href="#"
+                                    class="px-3 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                    <span class="sr-only">Previous</span>
+                                    <i class="fas fa-chevron-left w-5 h-5"></i>
+                                </a>
+
+                                <!-- Page 1 (Active) -->
+                                <a href="#" aria-current="page"
+                                    class="z-10 bg-primary border-primary text-white relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                                    1
+                                </a>
+
+                                <!-- Page 2 -->
+                                <a href="#"
+                                    class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                                    2
+                                </a>
+
+                                <!-- Page 3 -->
+                                <a href="#"
+                                    class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                                    3
+                                </a>
+
+                                <!-- Ellipsis -->
+                                <span
+                                    class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700">
+                                    ...
+                                </span>
+
+                                <!-- Page 8 -->
+                                <a href="#"
+                                    class="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+                                    8
+                                </a>
+
+                                <!-- Next -->
+                                <a href="#"
+                                    class="px-3 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                                    <span class="sr-only">Next</span>
+                                    <i class="fas fa-chevron-right w-5 h-5"></i>
+                                </a>
+                            </nav>
+                        </div>
+                        <!-- search by category -->
+                        <!-- hidden for large screen -->
+                        <div class="mx-auto flex justify-center items-center flex-col sm:flex-row xl:hidden gap-8 py-8">
+                            <!-- search by category -->
+                            <div id="advance-search"
+                                class="bg-secondary text-white p-4 lg:p-3 2xl:p-4 rounded-lg w-full sm:min-w-sm">
+                                <!-- Header -->
+                                <h2 class="text-xl font-semibold mb-4">Find the best car</h2>
+
+                                <!-- Form -->
+                                <form class="space-y-4">
+                                    <!-- Select Maker -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">Select maker</label>
+                                        <select
+                                            class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                            <option value="">Select maker</option>
+                                            <option value="toyota">Toyota</option>
+                                            <option value="honda">Honda</option>
+                                            <option value="nissan">Nissan</option>
+                                            <option value="mazda">Mazda</option>
+                                            <option value="suzuki">Suzuki</option>
+                                            <option value="mitsubishi">Mitsubishi</option>
+                                            <option value="subaru">Subaru</option>
+                                            <option value="bmw">BMW</option>
+                                            <option value="mercedes">Mercedes</option>
+                                            <option value="audi">Audi</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Select Model -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">Select model</label>
+                                        <select
+                                            class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                            <option value="">Select model</option>
+                                            <option value="corolla">Corolla</option>
+                                            <option value="camry">Camry</option>
+                                            <option value="civic">Civic</option>
+                                            <option value="accord">Accord</option>
+                                            <option value="altima">Altima</option>
+                                            <option value="maxima">Maxima</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Minimum Year -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">Minimum year</label>
+                                        <select
+                                            class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                            <option value="">Select min year</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Maximum Year -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">Maximum year</label>
+                                        <select
+                                            class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                            <option value="">Select max year</option>
+                                            <option value="2024">2024</option>
+                                            <option value="2023">2023</option>
+                                            <option value="2022">2022</option>
+                                            <option value="2021">2021</option>
+                                            <option value="2020">2020</option>
+                                            <option value="2019">2019</option>
+                                            <option value="2018">2018</option>
+                                            <option value="2017">2017</option>
+                                            <option value="2016">2016</option>
+                                            <option value="2015">2015</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Minimum Price -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">Minimum price</label>
+                                        <select
+                                            class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                            <option value="">Select min price</option>
+                                            <option value="500000">BDT 5,00,000</option>
+                                            <option value="1000000">BDT 10,00,000</option>
+                                            <option value="1500000">BDT 15,00,000</option>
+                                            <option value="2000000">BDT 20,00,000</option>
+                                            <option value="2500000">BDT 25,00,000</option>
+                                            <option value="3000000">BDT 30,00,000</option>
+                                            <option value="4000000">BDT 40,00,000</option>
+                                            <option value="5000000">BDT 50,00,000</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Maximum Price -->
+                                    <div>
+                                        <label class="block text-sm font-medium mb-2">Maximum price</label>
+                                        <select
+                                            class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                            <option value="">Select max price</option>
+                                            <option value="1000000">BDT 10,00,000</option>
+                                            <option value="1500000">BDT 15,00,000</option>
+                                            <option value="2000000">BDT 20,00,000</option>
+                                            <option value="2500000">BDT 25,00,000</option>
+                                            <option value="3000000">BDT 30,00,000</option>
+                                            <option value="4000000">BDT 40,00,000</option>
+                                            <option value="5000000">BDT 50,00,000</option>
+                                            <option value="10000000">BDT 1,00,00,000</option>
+                                        </select>
+                                    </div>
+
+                                    <!-- Search Button -->
+                                    <button type="submit"
+                                        class="w-full cursor-pointer bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded transition-colors duration-200 mt-6">
+                                        <i class="fas fa-search mr-2"></i>
+                                        Search
+                                    </button>
+                                </form>
+                            </div>
+
+                            <!-- search by make -->
+                            <div class="w-full">
+                                <!-- Header -->
+                                <h2 class="text-xl font-semibold text-gray-900 mb-4">Search by make</h2>
+
+                                <!-- Make List -->
+                                <div class="flex flex-col gap-2">
+                                    <!-- Toyota -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/ja-flag.gif" alt="Japan"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Toyota</span>
+                                            <span class="text-gray-600 ml-1">(34,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Honda -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/gm-flag.gif" alt="Sri Lanka"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Honda</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Nissan -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/fr-flag.gif" alt="Ghana"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Nissan</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Suzuki -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/ja-flag.gif" alt="India"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Suzuki</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mitsubishi -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/gm-flag.gif" alt="UAE"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Mitsubishi</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Toyota (Palau) -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/fr-flag.gif" alt="Palau"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Toyota</span>
+                                            <span class="text-gray-600 ml-1">(34,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Honda (Egypt) -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/ja-flag.gif" alt="Egypt"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Honda</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Nissan (Spain) -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/gm-flag.gif" alt="Spain"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Nissan</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Suzuki (Palestine) -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/fr-flag.gif" alt="Palestine"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Suzuki</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Mitsubishi (Mexico) -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/ja-flag.gif" alt="Mexico"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Mitsubishi</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Toyota (Mongolia) -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/gm-flag.gif" alt="Mongolia"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Toyota</span>
+                                            <span class="text-gray-600 ml-1">(34,000)</span>
+                                        </div>
+                                    </div>
+
+                                    <!-- Honda (Russia) -->
+                                    <div
+                                        class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                        <img src="../../assets/flags/fr-flag.gif" alt="Russia"
+                                            class="w-8 h-6 rounded mr-3 object-cover">
+                                        <div class="flex-1">
+                                            <span class="text-gray-900 font-medium">Honda</span>
+                                            <span class="text-gray-600 ml-1">(4,000)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- aside -->
+                    <!-- hidden for small screen -->
+                    <aside class="hidden mx-auto xl:flex xl:flex-col gap-6 ">
+                        <!-- search by category -->
+                        <div id="advance-search"
+                            class="bg-secondary text-white p-4 lg:p-3 2xl:p-4 rounded-lg w-sm xl:w-xs ">
+                            <!-- Header -->
+                            <h2 class="text-xl font-semibold mb-4">Find the best car</h2>
+
+                            <!-- Form -->
+                            <form class="space-y-4">
+                                <!-- Select Maker -->
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Select maker</label>
+                                    <select
+                                        class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                        <option value="">Select maker</option>
+                                        <option value="toyota">Toyota</option>
+                                        <option value="honda">Honda</option>
+                                        <option value="nissan">Nissan</option>
+                                        <option value="mazda">Mazda</option>
+                                        <option value="suzuki">Suzuki</option>
+                                        <option value="mitsubishi">Mitsubishi</option>
+                                        <option value="subaru">Subaru</option>
+                                        <option value="bmw">BMW</option>
+                                        <option value="mercedes">Mercedes</option>
+                                        <option value="audi">Audi</option>
+                                    </select>
+                                </div>
+
+                                <!-- Select Model -->
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Select model</label>
+                                    <select
+                                        class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                        <option value="">Select model</option>
+                                        <option value="corolla">Corolla</option>
+                                        <option value="camry">Camry</option>
+                                        <option value="civic">Civic</option>
+                                        <option value="accord">Accord</option>
+                                        <option value="altima">Altima</option>
+                                        <option value="maxima">Maxima</option>
+                                    </select>
+                                </div>
+
+                                <!-- Minimum Year -->
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Minimum year</label>
+                                    <select
+                                        class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                        <option value="">Select min year</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                    </select>
+                                </div>
+
+                                <!-- Maximum Year -->
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Maximum year</label>
+                                    <select
+                                        class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                        <option value="">Select max year</option>
+                                        <option value="2024">2024</option>
+                                        <option value="2023">2023</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                    </select>
+                                </div>
+
+                                <!-- Minimum Price -->
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Minimum price</label>
+                                    <select
+                                        class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                        <option value="">Select min price</option>
+                                        <option value="500000">BDT 5,00,000</option>
+                                        <option value="1000000">BDT 10,00,000</option>
+                                        <option value="1500000">BDT 15,00,000</option>
+                                        <option value="2000000">BDT 20,00,000</option>
+                                        <option value="2500000">BDT 25,00,000</option>
+                                        <option value="3000000">BDT 30,00,000</option>
+                                        <option value="4000000">BDT 40,00,000</option>
+                                        <option value="5000000">BDT 50,00,000</option>
+                                    </select>
+                                </div>
+
+                                <!-- Maximum Price -->
+                                <div>
+                                    <label class="block text-sm font-medium mb-2">Maximum price</label>
+                                    <select
+                                        class="w-full px-3 xl:px-2 2xl:px-3 py-2 bg-white text-gray-700 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                                        <option value="">Select max price</option>
+                                        <option value="1000000">BDT 10,00,000</option>
+                                        <option value="1500000">BDT 15,00,000</option>
+                                        <option value="2000000">BDT 20,00,000</option>
+                                        <option value="2500000">BDT 25,00,000</option>
+                                        <option value="3000000">BDT 30,00,000</option>
+                                        <option value="4000000">BDT 40,00,000</option>
+                                        <option value="5000000">BDT 50,00,000</option>
+                                        <option value="10000000">BDT 1,00,00,000</option>
+                                    </select>
+                                </div>
+
+                                <!-- Search Button -->
+                                <button type="submit"
+                                    class="w-full cursor-pointer bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded transition-colors duration-200 mt-6">
+                                    <i class="fas fa-search mr-2"></i>
+                                    Search
+                                </button>
+                            </form>
+                        </div>
+
+                        <!-- search by make -->
+                        <div class="p-4">
+                            <!-- Header -->
+                            <h2 class="text-xl font-semibold text-gray-900 mb-4">Search by make</h2>
+
+                            <!-- Make List -->
+                            <div class="flex flex-col gap-2">
+                                <!-- Toyota -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/ja-flag.gif" alt="Japan"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Toyota</span>
+                                        <span class="text-gray-600 ml-1">(34,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Honda -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/gm-flag.gif" alt="Sri Lanka"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Honda</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Nissan -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/fr-flag.gif" alt="Ghana"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Nissan</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Suzuki -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/ja-flag.gif" alt="India"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Suzuki</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Mitsubishi -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/gm-flag.gif" alt="UAE"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Mitsubishi</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Toyota (Palau) -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/fr-flag.gif" alt="Palau"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Toyota</span>
+                                        <span class="text-gray-600 ml-1">(34,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Honda (Egypt) -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/ja-flag.gif" alt="Egypt"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Honda</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Nissan (Spain) -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/gm-flag.gif" alt="Spain"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Nissan</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Suzuki (Palestine) -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/fr-flag.gif" alt="Palestine"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Suzuki</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Mitsubishi (Mexico) -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/ja-flag.gif" alt="Mexico"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Mitsubishi</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Toyota (Mongolia) -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/gm-flag.gif" alt="Mongolia"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Toyota</span>
+                                        <span class="text-gray-600 ml-1">(34,000)</span>
+                                    </div>
+                                </div>
+
+                                <!-- Honda (Russia) -->
+                                <div
+                                    class="flex justify-between items-center p-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md hover:bg-gray-50 cursor-pointer transition-all duration-200">
+                                    <img src="../../assets/flags/fr-flag.gif" alt="Russia"
+                                        class="w-8 h-6 rounded mr-3 object-cover">
+                                    <div class="flex-1">
+                                        <span class="text-gray-900 font-medium">Honda</span>
+                                        <span class="text-gray-600 ml-1">(4,000)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </article>
+
+        <!-- WhatsApp and Go to Top Button -->
+        <div class="fixed bottom-6 right-4 flex flex-col gap-3 z-50 md:right-6">
+            <!-- WhatsApp Button -->
+            <a href="https://wa.me/1234567890?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20vehicles"
+                target="_blank"
+                class="w-12 h-12 md:w-14 md:h-14 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 flex items-center justify-center group relative">
+                <i class="fab fa-whatsapp text-xl md:text-2xl"></i>
+
+                <!-- Mobile tooltip -->
+                <div
+                    class="absolute right-14 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 whitespace-nowrap md:text-sm md:px-3 md:py-2">
+                    Chat with us
+                    <div
+                        class="absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 border-2 border-transparent border-l-gray-800 md:border-4">
+                    </div>
+                </div>
+
+                <!-- Simple pulse -->
+                <div class="absolute inset-0 rounded-full bg-green-400 animate-ping opacity-30"></div>
+            </a>
+
+            <!-- Go to Top Button -->
+            <button id="goToTopResponsive"
+                class="w-12 h-12 md:w-12 md:h-12 bg-primary hover:bg-red-700 text-white rounded-full shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 opacity-0 invisible">
+                <i class="fas fa-chevron-up text-sm md:text-lg"></i>
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-900 text-gray-300">
+        <!-- Main Footer Content -->
+        <div class="container mx-auto px-4 py-8 lg:py-20 lg:pt-28">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-8">
+
+                <!-- Shop and Learn -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-semibold text-lg mb-4">Shop and Learn</h3>
+                    <ul class="">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Shop</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">About us</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">News</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Career</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Contact us</a>
+                        </li>
+                    </ul>
+
+                    <!-- Legal Section -->
+                    <div class="mt-6">
+                        <h3 class="text-white font-semibold text-lg mb-4">Legal</h3>
+                        <ul class="">
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Terms of
+                                    Use</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Privacy
+                                    Policy</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Cookie
+                                    Policy</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Basic
+                                    Policy</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Against
+                                    Anti-Social Forces</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Security
+                                    export control</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Sitemap</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Headquarter -->
+                    <div class="mt-6">
+                        <h3 class="text-white font-semibold text-lg mb-4">Headquarter</h3>
+                        <div class="space-y-1 text-sm">
+                            <p>Yokohama Plaza Bldg. 10F</p>
+                            <p>Kanagawa 221-0056 Japan</p>
+                            <p>TEL : +81-45-290-9485</p>
+                            <p>E-mail : csd@sbtjapan.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- By Make -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-semibold text-lg mb-4">By Make</h3>
+                    <ul class="">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Toyota</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Honda</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Nissan</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Mazda</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Suzuki</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Mitsubishi</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Daihatsu</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Subaru</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Hino</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Volkswagen</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">BMW</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Isuzu</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Lexus</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Mercedes</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Audi</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Volvo</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Land Rover</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Ford</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Peugeot</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Jeep</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Citroen</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Jaguar</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Hyundai</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Kia</a></li>
+                    </ul>
+                </div>
+
+                <!-- By Type & Category -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-semibold text-lg mb-4">By Type</h3>
+                    <ul class="">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Sedan</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Coupe</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Hatchback</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Station
+                                Wagon</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">SUV</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Pick up</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Van</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Mini Van</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Wagon</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Convertible</a>
+                        </li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Bus</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Truck</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Heavy
+                                Equipment</a></li>
+                    </ul>
+
+                    <!-- By Category -->
+                    <div class="mt-6">
+                        <h3 class="text-white font-semibold text-lg mb-4">By Category</h3>
+                        <ul class="">
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Left Hand
+                                    Drive</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Manual</a>
+                            </li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Hybrid</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-gray-300 hover:text-white transition-colors text-sm">Electric</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Diesel</a>
+                            </li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">4WD</a>
+                            </li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Leather
+                                    Seats</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Sun
+                                    Roof</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- By Price & Inventory Location -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-semibold text-lg mb-4">By Price</h3>
+                    <ul class="">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Under USD
+                                500</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Under USD
+                                1,000</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Under USD
+                                2,000</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Under USD
+                                3,000</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Under USD
+                                4,000</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Under USD
+                                5,000</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Over USD
+                                5,000</a></li>
+                    </ul>
+
+                    <!-- Inventory Location -->
+                    <div class="mt-6">
+                        <h3 class="text-white font-semibold text-lg mb-4">Inventory Location</h3>
+                        <ul class="">
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Japan
+                                    Inventory</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Korea
+                                    Inventory</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Singapore
+                                    Inventory</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Thailand
+                                    Inventory</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">China
+                                    Inventory</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">UK
+                                    Inventory</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">UAE
+                                    Inventory</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Car Content -->
+                    <div class="mt-6">
+                        <h3 class="text-white font-semibold text-lg mb-4">Car Content</h3>
+                        <ul class="">
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Customer
+                                    Reviews</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Car
+                                    Reviews</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">New
+                                    Arrivals</a></li>
+                            <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Best
+                                    Offers</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Global Office 1 -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-semibold text-lg mb-4">Global Office</h3>
+                    <ul class="">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Bangladesh -
+                                Dhaka</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Kyrgyzstan -
+                                Bishkek</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Mongolia -
+                                Ulaanbaatar</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Philippines -
+                                Manila</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Sri Lanka -
+                                Colombo</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Russia -
+                                Vladivostok</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">United Kingdom
+                                - London</a></li>
+                    </ul>
+                </div>
+
+                <!-- Global Office 2 -->
+                <div class="space-y-4">
+                    <h3 class="text-white font-semibold text-lg mb-4">Global Office</h3>
+                    <ul class="">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">DR Congo -
+                                Kinshasa</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">DR Congo -
+                                Lubumbashi</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">DR Congo -
+                                Lubumbashi</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">DR Congo -
+                                Goma</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">DR Congo -
+                                Butembo</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Kenya - Nairobi
+                                - Parklands</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Kenya -
+                                Mombasa</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Malawi -
+                                Lilongwe</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Tanzania - Dar
+                                es Salaam</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Tanzania -
+                                Arusha</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Tanzania -
+                                Mwanza</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Zambia -
+                                Lusaka</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Zambia -
+                                Kitwe</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Zambia -
+                                Nakonde</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Zambia -
+                                Chipata</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Zambia -
+                                Mongu</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors text-sm">Zimbabwe -
+                                Harare</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="border-t border-gray-700">
+            <div class="container mx-auto px-4 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <!-- Copyright -->
+                    <div class="text-sm text-gray-400">
+                        Copyright © 2025 iCarJapan Inc. All rights reserved.
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="flex items-center space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-google-plus-g text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- javascript file -->
+    <script src="../../scripts/main.js" defer></script>
+</body>
+
+</html>
